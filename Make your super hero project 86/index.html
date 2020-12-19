@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>C85</title>
+<link rel="stylesheet" href="project_c86.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/3.6.2/fabric.min.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<style>
+	.body_background 
+{
+    background-image: url("https://i.postimg.cc/2y02f4Mj/avenger-bg.jpg");
+    background-position: center;
+    background-size: cover;
+}
+#myCanvas
+{
+    border-width:10px;
+    background-color: white; 
+    border-style:ridge;
+}
+
+h2
+{
+	border-radius: 10px;
+	width: 200px;
+	padding: 5px;
+ }
+h3
+{
+	display: inline-block;
+}
+span
+{
+	color: black;	
+}
+a
+{
+	text-decoration: none;
+	font-size: 20px;
+	padding: 10px;
+    float: left;
+    border-radius: 10px;
+}
+#head_info
+{
+	width: 600px;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+
+</style>
+</head>
+
+<body class="body_background" onload="new_image()">
+	<center>
+		<h2 class="btn-primary">SUPERHERO</h2>
+
+		<div id="head_info" class="btn-danger">
+			<h3>Current Width  = <span id="current_width">30</span></h3>
+			<h3>Current Height  = <span id="current_height">30</span></h3>
+		</div>
+
+		<canvas width="1000" height="600" id="myCanvas"></canvas>
+
+	</center>
+	<script>var canvas = new fabric.Canvas('myCanvas');
+
+		player_x = 10;
+		player_y = 10;
+		
+		block_image_width = 30;
+		block_image_height = 30;
+		
+		
+		
+		</script>
+		<script src="fabric.js"></script>
+</body>
+</html>
